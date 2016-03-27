@@ -86,7 +86,7 @@ To detect interest points, SURF uses Hessian blob detector. Its feature descript
 \centering
 \caption{Object detection}\label{net_img}
 \end{figure}\\
-Since the position of end-effector can be known using the forward kinematics and the position to be reached, final position is known by finding the desired object position through Kinect depth sensor, and then the final configuration, $C_g={θ_{1g},θ_{2g},θ_{3g}}$ is calculated using inverse kinematics as shown in (2), (3).\\
+Since the position of end-effector can be known using the forward kinematics and the position to be reached, final position is known by finding the desired object position through Kinect depth sensor, and then the final configuration, $C_g={\theta_{1g},\theta_{2g},\theta_{3g}}$ is calculated using inverse kinematics as shown in (2), (3).\\
 \begin{equation} \label{eq:1}
 cos\theta_2=\frac{x^2+y^2-l_1^2-l_2^2}{2l_1l_2}
 \end{equation}\\
@@ -96,7 +96,7 @@ Using equation (1)\\
 \end{equation}\\
 
 \begin{equation} \label{eq:3}
-\theta_{1g}=atan2(y,x)-atn2(k_2,k_1)
+\theta_{1g}=atan2(y,x)-atan2(k_2,k_1)
 \end{equation}\\
 Where \\
 $k_1=L_1+L2cos\theta_2$\\
@@ -130,19 +130,91 @@ Real time mapping was done with the help of open source software, Real Time Appe
 \subsection{wheel odometry}
 The robot consisted of a differential drive mechanism for motion. Wheel encoders were used to calculate the rotational orientation of the wheels, to compute the velocity as well as the position information. The wheel odometry calculation consists of two parts.
 \subsubsection{Linear Motion and Rotation Around Center of Axis}
+\begin{figure}[h]
+\includegraphics[width=6cm]{linearandrot.png}
+\centering
+\caption{(a)Linear motion of base, (b)Rotation about the central axis}\label{net_img}
+\end{figure}
+The linear velocity of the robot is given relation (8).
+\begin{equation} \label{eq:8}
+\vec{v}=\vec{R}\times \vec{\omega}
+\end{equation}
+Where\\
+$\vec{v}$ is the linear velocity\\
+$\vec{R}$ is the radius vector for the wheels\\
+$\vec{\omega}$ is the angular velocity of the wheels\\
+The rotational velocity of the robot is given by (8)\\
+\begin{equation} \label{eq:9}
+\omega_{bot}=\frac{v_r-v_l}{D}
+\end{equation}
+Where,\\
+$\omega_{bot}$ is the angular velocity of the bot\\
+D is the distance between the wheels\\
+$v_r$ and $v_l$ are the velocities of the left and right wheels respectively\\
+
+In this case $v_r$= - $v_l$.
 \subsubsection{Rotation Around a Corner}
+
+The displacement of the center of the robot can be given by (10).
+\begin{equation} \label{eq:10}
+S=\frac{r+b}{2}\theta
+\end{equation}
+Where,\\
+S is the displacement\\
+R is the distance of the corner form the nearest wheel\\
+b is the distance between wheels\\
+$\theta$  is the angle of rotation\\
+
 \begin{figure}[h]
 \includegraphics[width=6cm]{motionwithrotation.png}
 \centering
 \caption{The motion with rotation around a corner}\label{net_img}
 \end{figure}
-\subsubsection{Position Calculation}
 
+\subsubsection{Position Calculation}
+The x and y axes velocities are given by (11) and (12).
+\begin{equation} \label{eq:11}
+\frac{dx}{dt}=\frac{v_r+v_l}{2}cos(\theta(t))
+\end{equation}
+\begin{equation} \label{eq:12}
+\frac{dx}{dt}=\frac{v_r+v_l}{2}sin(\theta(t))
+\end{equation}
+Where,\\
+m(t) is the velocity \\
+$\theta(t)$ is the angular velocity of the center of base\\
+The angular velocity is given by (13),\\
+\begin{equation} \label{eq:13}
+\frac{d\theta}{dt}=\frac{v_r-v_l}{2}
+\end{equation}
+The x and y positions and the orientation as a function of time are given by (14) and (15)\\
+\begin{equation} \label{eq:14}
+x(t)=x_o+\frac{b(v_r+v_l)}{2(v_r-v_l)}sin(frac{(v_r-v_l)t}{b}+\theta_o)-sin(\theta_o)
+\end{equation}
+
+\begin{equation} \label{eq:15}
+y(t)=y_o+\frac{b(v_r+v_l)}{2(v_r-v_l)}cos(frac{(v_r-v_l)t}{b}+\theta_o)-cos(\theta_o)
+\end{equation}
+
+\begin{equation} \label{eq:16}
+\theta(t)=\frac{v_r-v_l}{b}t+\theta_o
+\end{equation}
+Where,\\
+$\theta_o$ is the initial orientation\\
+$x_o$ is the initial x position\\
+$y_o$ is the initial y position\\
 \subsection{Sensor model and multi sensor bayesian inference}
-The conditional Probability P(z | x) [8] serves the role of a sensor model. In building a sensor model, the probability is constructed by fixing x = x, and finding P(z| x=x) on z result. When this sensor model is used and observations are made z = z is fixed and the likelihood function P(z=z|x) on x is inferred. The multi sensor form of Bayes’ requires conditional independence as shown in (16). (17) States that posterior Probability [10] on x given by all observations Zn is simply proportional to the product of prior probability and individual likelihoods from each information source.
+The conditional Probability P(z $\mid$ x) [8] serves the role of a sensor model. In building a sensor model, the probability is constructed by fixing X = x, and finding P(z$\mid$ X=x) on z result. When this sensor model is used and observations are made Z = z is fixed and the likelihood function P(Z=z$\mid$x) on x is inferred. The multi sensor form of Bayes’ requires conditional independence as shown in (16). (17) States that posterior Probability [10] on x given by all observations $Z^n$ is simply proportional to the product of prior probability and individual likelihoods from each information source.
 \\
+\begin{equation} \label{eq:17}
+P(x)=P(x)...P(z_n \mid x)
+\end{equation}
+\begin{equation} \label{eq:18}
+P(x \mid Z^n)=CP(x)\prod_{i=1}^{n}P(z_i \mid x)
+\end{equation}
+Where\\
+C is the normalization factor
 \\
-Here in our experiment, we are using z1, which is visual Odometry from RTAB Map's [11] and z2 is wheel Odometry. These are fused using the Bayesian filter [9].
+Here in our experiment, we are using $z_1$, which is visual Odometry from RTAB Map's [11] and $z_2$ is wheel Odometry. These are fused using the Bayesian filter [9].
 \subsection{Localization}
 Adaptive Monte Carlo Localization (AMCL) is a localization algorithm, which gives the position and orientation of the robot from the sensor data in the given environment. It uses particle filter to represent the distribution of likely states, with each particle representing a possible state which is hypothesis of where the robot is. Initially the algorithm starts with uniform random distribution of particles. Whenever the robot moves it shifts the particles to predict its new state after the movement. Whenever the robot senses something, the particles are resampled based on recursive Bayesian estimation to check how well the actual sensed data correlates with the predicted state.\\
 Usually laser scans are used on ROS. But laser scanner are expensive. We used fake laser scan from the Kinect sensor. The 3D maps that are constructed with the RTABMap are made to 2D by projecting on to 2D Plane. This helps to know the obstacles of the robot in another 2D cross section of the 3D plane, which cannot be known with 2D laser scanner.

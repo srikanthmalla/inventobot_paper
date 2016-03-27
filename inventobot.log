@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.17)  26 MAR 2016 19:27
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.17)  26 MAR 2016 21:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -134,37 +134,40 @@ LaTeX Warning: Label `net_img' multiply defined.
 LaTeX Warning: Label `net_img' multiply defined.
 
 
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
+LaTeX Warning: Label `net_img' multiply defined.
 
 
 LaTeX Warning: Label `net_img' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
 
 
 LaTeX Warning: Label `net_img' multiply defined.
@@ -293,12 +296,6 @@ Package pdftex.def Info: objectdetection.png used on input line 85.
 (pdftex.def)             Requested size: 170.71652pt x 141.52692pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 89.
-Missing character: There is no Î in font cmr10!
-Missing character: There is no ¸ in font cmr10!
-Missing character: There is no Î in font cmr10!
-Missing character: There is no ¸ in font cmr10!
-Missing character: There is no Î in font cmr10!
-Missing character: There is no ¸ in font cmr10!
 
 Underfull \hbox (badness 1789) in paragraph at lines 82--90
 \OT1/ptm/m/n/10 clas-si-fi-ca-tion and reg-is-tra-tion. It is in-spired by Sur-
@@ -369,56 +366,87 @@ Underfull \hbox (badness 10000) in paragraph at lines 127--128
 
  []
 
+<linearandrot.png, id=19, 712.6625pt x 321.2pt>
+File: linearandrot.png Graphic file (type png)
+ <use linearandrot.png>
+Package pdftex.def Info: linearandrot.png used on input line 134.
+(pdftex.def)             Requested size: 170.71652pt x 76.94254pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 [2 <./pidresponse.png> <./objectdetection.png>]
-<motionwithrotation.png, id=31, 426.59375pt x 400.49625pt>
+Underfull \hbox (badness 10000) in paragraph at lines 141--147
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--154
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 161--167
+
+ []
+
+<motionwithrotation.png, id=32, 426.59375pt x 400.49625pt>
 File: motionwithrotation.png Graphic file (type png)
 
 <use motionwithrotation.png>
-Package pdftex.def Info: motionwithrotation.png used on input line 135.
+Package pdftex.def Info: motionwithrotation.png used on input line 169.
 (pdftex.def)             Requested size: 170.71652pt x 160.2751pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--186
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--190
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--205
+
+ []
+
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--146
+Underfull \hbox (badness 10000) in paragraph at lines 206--208
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 159--163
+[3 <./linearandrot.png> <./motionwithrotation.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 231--235
 
  []
 
-<robotsetup.png, id=32, 539.01375pt x 654.445pt>
+<robotsetup.png, id=38, 539.01375pt x 654.445pt>
 File: robotsetup.png Graphic file (type png)
  <use robotsetup.png>
-Package pdftex.def Info: robotsetup.png used on input line 166.
+Package pdftex.def Info: robotsetup.png used on input line 238.
 (pdftex.def)             Requested size: 170.71652pt x 207.27968pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<implementedresult.png, id=33, 715.67375pt x 393.47pt>
+<implementedresult.png, id=39, 715.67375pt x 393.47pt>
 File: implementedresult.png Graphic file (type png)
 
 <use implementedresult.png>
-Package pdftex.def Info: implementedresult.png used on input line 174.
+Package pdftex.def Info: implementedresult.png used on input line 246.
 (pdftex.def)             Requested size: 227.62204pt x 125.13846pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[3 <./motionwithrotation.png>]
+ [4 <./robotsetup.png> <./implementedresult.png>]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no “ in font ptmr7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 200--201
+Underfull \hbox (badness 10000) in paragraph at lines 272--273
 []\OT1/ptm/m/n/8 A. Elfes: Sonar-based real-world map-ping and nav-i-ga-
  []
 
 
-Underfull \hbox (badness 2744) in paragraph at lines 202--203
+Underfull \hbox (badness 2744) in paragraph at lines 274--275
 []\OT1/ptm/m/n/8 J.O. Berger: Sta-tis-ti-cal De-ci-sion The-ory and Bayesian An
 al-y-sis
  []
@@ -438,16 +466,18 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[4 <./robotsetup.png> <./implementedresult.png>] (./inventobot.aux)
+[5
+
+] (./inventobot.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2227 strings out of 493304
- 35724 string characters out of 6139871
- 101844 words of memory out of 5000000
- 5677 multiletter control sequences out of 15000+600000
+ 2243 strings out of 493304
+ 35898 string characters out of 6139871
+ 101941 words of memory out of 5000000
+ 5692 multiletter control sequences out of 15000+600000
  37690 words of font info for 71 fonts, out of 8000000 for 9000
  960 hyphenation exceptions out of 8191
  37i,9n,23p,1017b,240s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -466,10 +496,10 @@ ive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a
 .pfb>
-Output written on inventobot.pdf (4 pages, 1238246 bytes).
+Output written on inventobot.pdf (5 pages, 1270345 bytes).
 PDF statistics:
- 91 PDF objects out of 1000 (max. 8388607)
- 57 compressed objects within 1 object stream
+ 96 PDF objects out of 1000 (max. 8388607)
+ 59 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
