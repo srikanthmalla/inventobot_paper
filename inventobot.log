@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.17)  26 MAR 2016 21:00
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.3.17)  26 MAR 2016 21:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -123,56 +123,7 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen117
 \Gin@req@width=\dimen118
 )
-(./inventobot.aux
-
-LaTeX Warning: Label `net_img' multiply defined.
-
-
-LaTeX Warning: Label `net_img' multiply defined.
-
-
-LaTeX Warning: Label `net_img' multiply defined.
-
-
-LaTeX Warning: Label `net_img' multiply defined.
-
-
-LaTeX Warning: Label `net_img' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `' multiply defined.
-
-
-LaTeX Warning: Label `net_img' multiply defined.
-
-)
+(./inventobot.aux)
 \openout1 = `inventobot.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
@@ -187,7 +138,8 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
- (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count93
 \scratchdimen=\dimen119
@@ -331,62 +283,43 @@ Underfull \hbox (badness 10000) in paragraph at lines 105--107
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--114
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
 
  []
 
 
-Overfull \hbox (3.33908pt too wide) detected at line 116
-[]\OML/cmm/m/it/10 F \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 weight[] \OT1/cmr/m/n/1
-0 + \OML/cmm/m/it/10 weight[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 weight[]=\OT1/
-cmr/m/n/10 2
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 116--117
+Underfull \hbox (badness 10000) in paragraph at lines 119--125
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--125
+Underfull \hbox (badness 10000) in paragraph at lines 127--129
 
  []
 
 
-Overfull \hbox (31.12976pt too wide) detected at line 127
-[]\OML/cmm/m/it/10 outputVoltage \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 k[] \OMS/cm
-sy/m/n/10 ^^C \OML/cmm/m/it/10 error[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 k[] [
-] error[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 kd \OMS/cmsy/m/n/10 ^^C \OT1/cmr/m
-/n/10 (\OML/cmm/m/it/10 error[] \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 error[]\O
-T1/cmr/m/n/10 )
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 127--128
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
 
  []
-
-<linearandrot.png, id=19, 712.6625pt x 321.2pt>
-File: linearandrot.png Graphic file (type png)
- <use linearandrot.png>
-Package pdftex.def Info: linearandrot.png used on input line 134.
-(pdftex.def)             Requested size: 170.71652pt x 76.94254pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
 
 [2 <./pidresponse.png> <./objectdetection.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 141--147
+<linearandrot.png, id=31, 712.6625pt x 321.2pt>
+File: linearandrot.png Graphic file (type png)
+ <use linearandrot.png>
+Package pdftex.def Info: linearandrot.png used on input line 138.
+(pdftex.def)             Requested size: 170.71652pt x 76.94254pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--151
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--154
+Underfull \hbox (badness 10000) in paragraph at lines 153--158
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 161--167
+Underfull \hbox (badness 10000) in paragraph at lines 165--171
 
  []
 
@@ -394,20 +327,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 161--167
 File: motionwithrotation.png Graphic file (type png)
 
 <use motionwithrotation.png>
-Package pdftex.def Info: motionwithrotation.png used on input line 169.
+Package pdftex.def Info: motionwithrotation.png used on input line 173.
 (pdftex.def)             Requested size: 170.71652pt x 160.2751pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--186
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--190
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 188--190
+Underfull \hbox (badness 10000) in paragraph at lines 192--194
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 200--205
+Underfull \hbox (badness 10000) in paragraph at lines 204--209
 
  []
 
@@ -415,38 +352,38 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 206--208
+Underfull \hbox (badness 10000) in paragraph at lines 210--212
 
  []
 
 [3 <./linearandrot.png> <./motionwithrotation.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 231--235
+Underfull \hbox (badness 10000) in paragraph at lines 235--239
 
  []
 
 <robotsetup.png, id=38, 539.01375pt x 654.445pt>
 File: robotsetup.png Graphic file (type png)
  <use robotsetup.png>
-Package pdftex.def Info: robotsetup.png used on input line 238.
+Package pdftex.def Info: robotsetup.png used on input line 242.
 (pdftex.def)             Requested size: 170.71652pt x 207.27968pt.
 
 <implementedresult.png, id=39, 715.67375pt x 393.47pt>
 File: implementedresult.png Graphic file (type png)
 
 <use implementedresult.png>
-Package pdftex.def Info: implementedresult.png used on input line 246.
+Package pdftex.def Info: implementedresult.png used on input line 250.
 (pdftex.def)             Requested size: 227.62204pt x 125.13846pt.
  [4 <./robotsetup.png> <./implementedresult.png>]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no “ in font ptmr7t!
 
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
+Underfull \hbox (badness 10000) in paragraph at lines 276--277
 []\OT1/ptm/m/n/8 A. Elfes: Sonar-based real-world map-ping and nav-i-ga-
  []
 
 
-Underfull \hbox (badness 2744) in paragraph at lines 274--275
+Underfull \hbox (badness 2744) in paragraph at lines 278--279
 []\OT1/ptm/m/n/8 J.O. Berger: Sta-tis-ti-cal De-ci-sion The-ory and Bayesian An
 al-y-sis
  []
@@ -470,14 +407,14 @@ Before submitting the final camera ready copy, remember to:
 
 ] (./inventobot.aux)
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 2243 strings out of 493304
- 35898 string characters out of 6139871
- 101941 words of memory out of 5000000
- 5692 multiletter control sequences out of 15000+600000
+ 2244 strings out of 493304
+ 35905 string characters out of 6139871
+ 101729 words of memory out of 5000000
+ 5693 multiletter control sequences out of 15000+600000
  37690 words of font info for 71 fonts, out of 8000000 for 9000
  960 hyphenation exceptions out of 8191
  37i,9n,23p,1017b,240s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -496,7 +433,7 @@ ive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a
 .pfb>
-Output written on inventobot.pdf (5 pages, 1270345 bytes).
+Output written on inventobot.pdf (5 pages, 1270112 bytes).
 PDF statistics:
  96 PDF objects out of 1000 (max. 8388607)
  59 compressed objects within 1 object stream

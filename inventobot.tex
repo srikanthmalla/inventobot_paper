@@ -111,19 +111,23 @@ Whereas J and F are shown in (5) and (6)
 \begin{equation} \label{eq:5}
 J=(-L_1S1+L_2S_12)L_1C1+L_2C12-L_2S12L_2C12
 \end{equation}\\
+considering the maximum limit
 \begin{equation} \label{eq:6}
-F=weight_{end effector}+weight_{load}+weight_{motors and links}/2
+F=w_{end\ effector}+w_{load}+w_{motors\ and\ links}/2
 \end{equation}\\
 
 Where\\
 J is the Jacobian\\
 F is the force matix\\
+w is the weight \\
 $\tau$ is the torque\\
 Position control of the DC Motor is done using PID control where the parameters are tuned manually to find the best response, since the system transfer function is unknown.\\
-error= desired position- current position\\
-In discrete time steps\\
 \begin{equation} \label{eq:7}
-output Voltage=k_p*error_t+k_i\sum_{i=0}^{t}error_i+kd*(error_t-error_{t-1})
+e= desired position- current position\\
+\end{equation}
+In discrete time steps\\
+\begin{equation} \label{eq:8}
+output\ Voltage=k_p*e_t+k_i\sum_{i=0}^{t}e_i+kd*(e_t-e_{t-1})
 \end{equation}\\
 \subsection{Mapping}
 Real time mapping was done with the help of open source software, Real Time Appearance-Based Mapping (RTABMap). It is a novel RGB-D point cloud Simultaneous Localization and Mapping (SLAM) approach, which is based on a Bayesian loop Closure Detection [3]. This approach uses a bag of identifiers in the surrounding images to determine how likely a new image comes from a previous location or a new location. A loop closure is detected when the image is from the dataset of the previously collected images. RTABMap can be used directly with a hand-held Kinect or a stereo camera.
@@ -136,7 +140,7 @@ The robot consisted of a differential drive mechanism for motion. Wheel encoders
 \caption{(a)Linear motion of base, (b)Rotation about the central axis}\label{net_img}
 \end{figure}
 The linear velocity of the robot is given relation (8).
-\begin{equation} \label{eq:8}
+\begin{equation} \label{eq:9}
 \vec{v}=\vec{R}\times \vec{\omega}
 \end{equation}
 Where\\
@@ -144,7 +148,7 @@ $\vec{v}$ is the linear velocity\\
 $\vec{R}$ is the radius vector for the wheels\\
 $\vec{\omega}$ is the angular velocity of the wheels\\
 The rotational velocity of the robot is given by (8)\\
-\begin{equation} \label{eq:9}
+\begin{equation} \label{eq:10}
 \omega_{bot}=\frac{v_r-v_l}{D}
 \end{equation}
 Where,\\
@@ -156,7 +160,7 @@ In this case $v_r$= - $v_l$.
 \subsubsection{Rotation Around a Corner}
 
 The displacement of the center of the robot can be given by (10).
-\begin{equation} \label{eq:10}
+\begin{equation} \label{eq:11}
 S=\frac{r+b}{2}\theta
 \end{equation}
 Where,\\
@@ -173,29 +177,29 @@ $\theta$  is the angle of rotation\\
 
 \subsubsection{Position Calculation}
 The x and y axes velocities are given by (11) and (12).
-\begin{equation} \label{eq:11}
+\begin{equation} \label{eq:12}
 \frac{dx}{dt}=\frac{v_r+v_l}{2}cos(\theta(t))
 \end{equation}
-\begin{equation} \label{eq:12}
+\begin{equation} \label{eq:13}
 \frac{dx}{dt}=\frac{v_r+v_l}{2}sin(\theta(t))
 \end{equation}
 Where,\\
 m(t) is the velocity \\
 $\theta(t)$ is the angular velocity of the center of base\\
 The angular velocity is given by (13),\\
-\begin{equation} \label{eq:13}
+\begin{equation} \label{eq:14}
 \frac{d\theta}{dt}=\frac{v_r-v_l}{2}
 \end{equation}
 The x and y positions and the orientation as a function of time are given by (14) and (15)\\
-\begin{equation} \label{eq:14}
-x(t)=x_o+\frac{b(v_r+v_l)}{2(v_r-v_l)}sin(frac{(v_r-v_l)t}{b}+\theta_o)-sin(\theta_o)
-\end{equation}
-
 \begin{equation} \label{eq:15}
-y(t)=y_o+\frac{b(v_r+v_l)}{2(v_r-v_l)}cos(frac{(v_r-v_l)t}{b}+\theta_o)-cos(\theta_o)
+x(t)=x_o+\frac{b(v_r+v_l)}{2(v_r-v_l)}sin(\frac{(v_r-v_l)t}{b}+\theta_o)-sin(\theta_o)
 \end{equation}
 
 \begin{equation} \label{eq:16}
+y(t)=y_o+\frac{b(v_r+v_l)}{2(v_r-v_l)}cos(\frac{(v_r-v_l)t}{b}+\theta_o)-cos(\theta_o)
+\end{equation}
+
+\begin{equation} \label{eq:17}
 \theta(t)=\frac{v_r-v_l}{b}t+\theta_o
 \end{equation}
 Where,\\
@@ -205,10 +209,10 @@ $y_o$ is the initial y position\\
 \subsection{Sensor model and multi sensor bayesian inference}
 The conditional Probability P(z $\mid$ x) [8] serves the role of a sensor model. In building a sensor model, the probability is constructed by fixing X = x, and finding P(z$\mid$ X=x) on z result. When this sensor model is used and observations are made Z = z is fixed and the likelihood function P(Z=z$\mid$x) on x is inferred. The multi sensor form of Bayes’ requires conditional independence as shown in (16). (17) States that posterior Probability [10] on x given by all observations $Z^n$ is simply proportional to the product of prior probability and individual likelihoods from each information source.
 \\
-\begin{equation} \label{eq:17}
+\begin{equation} \label{eq:18}
 P(x)=P(x)...P(z_n \mid x)
 \end{equation}
-\begin{equation} \label{eq:18}
+\begin{equation} \label{eq:19}
 P(x \mid Z^n)=CP(x)\prod_{i=1}^{n}P(z_i \mid x)
 \end{equation}
 Where\\
